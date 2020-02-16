@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import CreateUserFrom from './components/CreateUserForm'
+import CreateUserForm from './components/CreateUserForm'
 
  class App extends React.Component {
    componentDidMount() { 
@@ -20,7 +20,11 @@ import CreateUserFrom from './components/CreateUserForm'
    }
  
    render() {
-     return <div id = 'map'></div>
-   }
+     return (
+      <div>
+       <div id = 'map'></div>
+       <CreateUserForm />
+      </div>
+     )}
  } 
  export default App;
