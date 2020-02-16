@@ -117,7 +117,7 @@ class CreateUserForm extends Component {
             <option value='Alaska'>Alaska</option>
             <option value='Arizona'>Arizona</option>
             <option value='Arkansas'>Arkansas</option>
-            <option value='California'>California</option>
+            <option selected value='California'>California</option>
             <option value='Colorodo'>Colorodo</option>
             <option value='Connecticut'>Connecticut</option>
             <option value='Delaware'>Delaware</option>
