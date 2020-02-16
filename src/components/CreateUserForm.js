@@ -21,7 +21,7 @@ class CreateUserForm extends Component {
 
   handleUserSubmit = (event) => {
     event.preventDefault()
-    return fetch('http://#', {
+    return fetch('http://localhost:9000/register', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -63,51 +63,53 @@ class CreateUserForm extends Component {
       <div>
         <h1>User Signup</h1>
         <form
+          className='user-signup'
           type='text'
           onSubmit={this.handleUserSubmit}
         >
+          <p>Email</p>
           <input
             type='text'
-            placeholder='Email'
             name='email'
             onChange={this.handleUserChange}
             value={this.email}
-          />
+          /> <br/>
+          <p>Password</p>
           <input
             type='text'
-            placeholder='Password'
             name='password'
             onChange={this.handleUserChange}
             value={this.password}
-          />
+          /> <br/>
+          <p>Name</p>
           <input
             type='text'
-            placeholder='Name'
             name='name'
             onChange={this.handleUserChange}
             value={this.name}
-          />
+          /> <br/>
+          <p>Company Name</p>
           <input
             type='text'
-            placeholder='Company Name'
             name='company_name'
             onChange={this.handleUserChange}
             value={this.company_name}
-          />
+          /> <br/>
+          <p>Street Address</p>
           <input
             type='text'
-            placeholder='Street Address'
             name='street_address'
             onChange={this.handleUserChange}
             value={this.street_address}
-          />
+          /> <br/>
+          <p>City</p>
           <input
             type='text'
-            placeholder='City'
             name='city'
             onChange={this.handleUserChange}
             value={this.city}
-          />
+          /> <br/>
+          <p>State</p>
           <select
             name='state'
             onChange={this.handleUserChange}
@@ -163,21 +165,21 @@ class CreateUserForm extends Component {
             <option value='West Virginia'>West Virginia</option>
             <option value='Wisconsin'>Wisconsin</option>
             <option value='Wyoming'>Wyoming</option>
-          </select>
+          </select> <br/>
+          <p>Zip Code</p>
           <input
             type='text'
-            placeholder='Zip Code'
             name='zip_code'
             onChange={this.handleUserChange}
             value={this.zip_code}
-          />
+          /> <br/>
+          <p>Phone Number</p>
           <input
             type='text'
-            placeholder='Phone Number'
             name='phone_number'
             onChange={this.handleUserChange}
             value={this.phone_number}
-          />
+          /> <br/>
           <button type='submit'>Submit</button>
         </form>
       </div>

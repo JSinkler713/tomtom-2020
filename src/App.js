@@ -9,7 +9,7 @@ import CreateUserForm from './components/CreateUserForm'
      document.body.appendChild(script);
      script.async = true;
      script.onload = function () {
-       window.tomtom.L.map('map', {
+       const map = window.tomtom.L.map('map', {
          source: 'vector',
          key: 'p4j6JnS6ZKoM9ZuDG8SQH53sFi3XLJ3G',
          center: [37.769167, -122.478468],
@@ -20,7 +20,7 @@ import CreateUserForm from './components/CreateUserForm'
        let check = window.tomtom.L.marker([37.787901, -122.396617]).addTo(map);
      }
    }
- 
+
    render() {
      return (
       <div>
