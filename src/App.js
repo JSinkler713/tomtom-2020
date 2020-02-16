@@ -17,7 +17,7 @@ import CreateUserForm from './components/CreateUserForm'
          zoom: 15
        });
 
-       let check = window.tomtom.L.marker([37.769167, -122.478468]).addTo(map); 
+       let check = window.tomtom.L.marker([37.787901, -122.396617]).addTo(map); 
      }
    }
  
