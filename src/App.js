@@ -12,7 +12,7 @@ import CreateUserForm from './components/CreateUserForm'
        const map = window.tomtom.L.map('map', {
          source: 'vector',
          key: 'p4j6JnS6ZKoM9ZuDG8SQH53sFi3XLJ3G',
-         center: [37.769167, -122.478468],
+         center: [37.787901, -122.396617],
          basePath: '/sdk',
          zoom: 15
        });
