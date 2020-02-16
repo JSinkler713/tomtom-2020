@@ -9,13 +9,15 @@ import CreateUserForm from './components/CreateUserForm'
      document.body.appendChild(script);
      script.async = true;
      script.onload = function () {
-       window.tomtom.L.map('map', {
+       const map = window.tomtom.L.map('map', {
          source: 'vector',
          key: 'p4j6JnS6ZKoM9ZuDG8SQH53sFi3XLJ3G',
          center: [37.769167, -122.478468],
          basePath: '/sdk',
          zoom: 15
        });
+
+       let check = window.tomtom.L.marker([37.769167, -122.478468]).addTo(map); 
      }
    }
  
