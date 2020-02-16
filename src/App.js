@@ -1,5 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD
  import './App.css';
+=======
+import './App.css';
+>>>>>>> 3c94a25b41caed69125507bd9c6903bcf948e371
 
  class App extends React.Component {
    componentDidMount() { 
